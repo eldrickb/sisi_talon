@@ -1,4 +1,0 @@
-app: Vivaldi
--
-page last:  key("alt-left")
-page next:  key("alt-right")
