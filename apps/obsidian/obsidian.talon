@@ -1,5 +1,6 @@
 app: obsidian 
 -
+tag(): user.find_and_replace
 
 tab new: key("ctrl-t")
 tab close: key("ctrl-w")
@@ -12,7 +13,6 @@ tab last: key("ctrl-shift-tab")
 (links) | (calendar): key("ctrl-shift-\\")
 
 open: key("crtl-o")
-action: key("ctrl-k")
 template: key("ctrl-j")
 
 settings: key("ctrl-,")
@@ -21,4 +21,7 @@ brat: key("ctrl-p")
 
 land here: key("ctrl-shift-u")
 daily note: key("ctrl-u")
-toggle: key("ctrl-e")
+switch: key("ctrl-e")
+
+
+please [<user.text>]$: user.obsidian_place_command(text)

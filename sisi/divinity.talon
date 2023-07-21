@@ -11,3 +11,6 @@ rotate left:
   key("del")
   key("del")
   key("del")
+
+
+  save: key("p")
