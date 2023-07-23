@@ -49,3 +49,5 @@ shape [<user.text>]:
   key("enter")
 
 please [<user.text>]$: user.obsidian_place_command(text)
+
+bullet: key("ctrl-m")

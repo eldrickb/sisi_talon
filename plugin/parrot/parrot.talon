@@ -9,3 +9,6 @@ parrot(hiss):
 
 parrot(shh): 
 	user.mouse_scroll_up(2)
+
+parrot(suck):
+	user.mouse_sleep()

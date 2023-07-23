@@ -9,6 +9,9 @@ next:  mouse_click(4)
   
 
 swap: key("super-shift-right")
+swap <user.running_applications>: 
+  user.switcher_focus(running_applications)
+  key("super-shift-right")
 
 press dell: key("delete")
 
