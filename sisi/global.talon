@@ -39,11 +39,25 @@ window (hide|minimize): key("super-down")
 
 system sleep: user.system_command("%windir%\\System32\\rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
 
+clap: key("enter")
 
 north: key("up")
 south: key("down")
 east: key("right")
 west: key("left")
+
+march north: key("up:down")
+march south: key("down:down")
+march east: key("right:down")
+march west: key("left:down")
+
+halt:
+  key("up:up")
+  key("down:up")
+  key("right:up")
+  key("left:up")
+
+
 
 
 talon search [<user.text>]:

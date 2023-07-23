@@ -78,4 +78,4 @@ spell that <user.formatters> <user.letters>:
 
 
 skip: key("down")
-next: key("enter")()
+next: key("enter")
