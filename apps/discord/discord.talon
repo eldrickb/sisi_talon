@@ -7,6 +7,8 @@ tag(): user.emoji
 {user.discord_destination} [<user.text>]:
     user.discord_quick_switcher(user.discord_destination, user.text or "")
 switcher: user.discord_quick_switcher("", "")
+switch [<user.text>]: 
+    user.discord_quick_switcher("", text)
 
 # Navigation: Channels
 [channel] mentions last: user.discord_mentions_last()

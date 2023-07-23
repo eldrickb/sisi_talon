@@ -64,3 +64,9 @@ toggle right sidebar: key(ctrl-.)
 (previous | last) (element | bit):
     app.notify("please use the voice command 'element last' instead of 'last element'")
     key(shift-tab)
+
+
+search [<user.text>]:
+    key("ctrl-g")
+    insert(text or "")
+    

@@ -15,3 +15,4 @@ class Actions:
     def system_command_nb(cmd: str):
         """execute a command on the system without blocking"""
         subprocess.Popen(cmd, shell=True)
+ 
