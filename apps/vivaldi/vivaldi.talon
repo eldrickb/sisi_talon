@@ -37,7 +37,10 @@ show calendar: key("ctrl-shift-u")
 show settings: key("ctrl-f12")
 
 
-hunt: key("ctrl-f")
+hunt [<user.text>]: 
+    key("ctrl-f")
+    sleep(20ms)
+    insert(text)
 
 
 workspace one: key("ctrl-shift-1")
@@ -61,6 +64,7 @@ bang:
 fullscreen: key("f11")
 
 snipe [<user.text>]:
+    
     key("ctrl-t")
     key("ctrl-l")
     sleep(50ms)
