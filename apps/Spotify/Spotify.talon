@@ -1,6 +1,6 @@
 app: Spotify
 -
-search [<user.text>]: 
+hunt [<user.text>]: 
   key(ctrl-l)
   insert(text)
 Create new playlist: key(ctrl-n)
@@ -10,6 +10,3 @@ Shuffle: key(ctrl-s)
 Next [track | song]: key(ctrl-right) 
 Last [track | song]: key(ctrl-left)
 Mute: key(ctrl-shift-down)
-search [for] <user.text>$: 
-    key(ctrl-l)
-    insert(user.text)

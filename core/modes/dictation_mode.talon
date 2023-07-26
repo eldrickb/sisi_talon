@@ -78,4 +78,6 @@ spell that <user.formatters> <user.letters>:
 
 
 skip: key("down")
-next: key("enter")
+bang: insert("!")
+que: insert("?")
+dot: insert(".")
