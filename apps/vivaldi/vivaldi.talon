@@ -23,8 +23,6 @@ pretty please [<user.text>]:
     insert(user.text or "")
     key("enter")
 
-
-
 # bar: browser.focus_address()
 panel: key("ctrl-\\")
 
@@ -45,8 +43,8 @@ hunt [<user.text>]:
 
 workspace one: key("ctrl-shift-1")
 workspace two: key("ctrl-shift-2")
-workspace three: key("ctrl-shift-3")
-workspace four: key("ctrl-shift-4")
+workspace three: key("ctrl-alt-3")
+workspace four: key("ctrl-alt-4")
 workspace five: key("ctrl-shift-5")
 workspace six: key("ctrl-shift-6")
 workspace seven: key("ctrl-shift-7")
@@ -59,7 +57,6 @@ bang:
     sleep(1)
     key("shift:up")
 
-    
 
 fullscreen: key("f11")
 
@@ -71,3 +68,45 @@ snipe [<user.text>]:
     insert(text)
     sleep(50ms)
     key("enter")
+
+
+# automation
+start casting screen:
+    mimic("reveal menu")
+    sleep(0.5)
+    mimic("touch bat")
+    sleep(0.5)
+    
+    mimic("reveal in file menu")
+    sleep(0.5)
+    mimic("touch jury")
+    sleep(0.5)
+    
+    mimic("reveal in cast menu")
+    sleep(0.5)
+    mimic("touch gust")
+    sleep(0.5)
+    
+    mimic("autoclick source screen")
+    sleep(0.5)
+
+reveal menu:
+    bounding_rectangle = user.mouse_helper_calculate_relative_rect("4.0 2.0 538.0 27.0", "active_window")
+    user.mouse_helper_blob_picker(bounding_rectangle)
+
+reveal in cast menu:
+    bounding_rectangle = user.mouse_helper_calculate_relative_rect("12.0 13.0 148.0 -25.0", "active_window")
+    user.mouse_helper_blob_picker(bounding_rectangle)
+
+
+reveal in file menu:
+    bounding_rectangle = user.mouse_helper_calculate_relative_rect("45.0 34.0 260.0 439.0", "active_window")
+    user.mouse_helper_blob_picker(bounding_rectangle)
+
+autoclick source screen:
+    user.mouse_helper_position_save()
+    user.mouse_helper_move_image_relative("2023-07-29_01.59.38.459873.png", 0, -4, 33)
+    sleep(0.05)
+    mouse_click(0)
+    sleep(0.05)
+    user.mouse_helper_position_restore()

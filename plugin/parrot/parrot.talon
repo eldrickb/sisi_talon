@@ -5,10 +5,10 @@ parrot(pop):
 	user.mouse_drag_end()
 
 parrot(hiss): 
-	user.mouse_scroll_down(2)
+	user.mouse_scroll_down(1.75)
 
 parrot(shh): 
-	user.mouse_scroll_up(2)
+	user.mouse_scroll_up(1.75)
 
 parrot(suck):
 	user.mouse_sleep()

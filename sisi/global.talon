@@ -57,7 +57,8 @@ halt:
   key("right:up")
   key("left:up")
 
-
+desktop next: key("ctrl-super-right")
+desktop last: key("ctrl-super-left")
 
 
 talon search [<user.text>]:
