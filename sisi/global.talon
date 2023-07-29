@@ -24,18 +24,21 @@ focus web: user.switcher_focus("vivaldi")
 hop: key("enter")
 oops: key("ctrl-z")
 
-yum: 
+yum [<user.text>]: 
   edit.select_word()  
+  insert(text or "")
+
+yummy [<user.text>]:
+  edit.select_line()
+  insert(text or "")
   
 
-yummy:
-  edit.extend_word_left()
-  
+bend: user.line_start();
+lend: user.line_end();
 
 take line: edit.select_line()
 
 window (hide|minimize): key("super-down")
-
 
 system sleep: user.system_command("%windir%\\System32\\rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
 
@@ -67,7 +70,11 @@ talon search [<user.text>]:
     key("ctrl-a")
     insert(text or "")
     
-
+bang: 
+    key("shift:down")
+    mouse_click()
+    sleep(1)
+    key("shift:up")
 
 #: key("")
 
