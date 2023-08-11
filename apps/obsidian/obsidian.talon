@@ -2,6 +2,8 @@ app: obsidian
 -
 tag(): user.find_and_replace
 
+
+# tabs
 tab new: key("ctrl-t")
 tab close: key("ctrl-w")
 tab reopen: key("ctrl-shift-t")
@@ -21,6 +23,8 @@ tab seven: key("ctrl-8")
 (files) | (sidebar): key("ctrl-\\")
 (links) | (calendar): key("ctrl-shift-\\")
 
+
+# basic commands
 open [<user.text>]: 
   key("ctrl-o") 
   insert(text)
@@ -28,7 +32,13 @@ open [<user.text>]:
 template: key("ctrl-j")
 
 settings: key("ctrl-,")
-omni: key("ctrl-shift-o")
+store: key("ctrl-alt-p")
+
+
+omni [<user.text>]: 
+    key("ctrl-shift-o")
+    insert(text)  
+    
 brat: key("ctrl-p")
 
 land here: key("ctrl-shift-u")
@@ -42,12 +52,55 @@ template [<user.text>]:
   insert(user.text)
 
 
-shape [<user.text>]: 
-  key("ctrl-j") 
-  sleep(20ms)
-  insert(user.text)
-  key("enter")
-
 please [<user.text>]$: user.obsidian_place_command(text)
 
+# basic text commands
+
+b10.: key("ctrl-m")
+
+
+bold: key("**")
+slant: key("*")
+strike: key("~~")
+
+
+
+link [<user.text>]: 
+    insert("[[")
+    insert(text or "")
+
+    
+today:
+    insert("@Today")
+    sleep(50ms)
+    key(enter)
+
+
 bullet: key("ctrl-m")
+
+# headers
+    
+header one  [<user.text>]$:
+    insert("# ")
+    insert(user.formatted_text(text or "", "CAPITALIZE_FIRST_WORD"))
+    
+header two  [<user.text>]$:
+    insert("## ")
+    insert(user.formatted_text(text or "", "CAPITALIZE_FIRST_WORD"))
+
+header three  [<user.text>]$:
+    insert("### ")
+    insert(user.formatted_text(text or "", "CAPITALIZE_FIRST_WORD"))
+
+header four  [<user.text>]$:
+    insert("#### ")
+    insert(user.formatted_text(text or "", "CAPITALIZE_FIRST_WORD"))
+
+header five  [<user.text>]$:
+    insert("###### ")
+    insert(user.formatted_text(text or "", "CAPITALIZE_FIRST_WORD"))
+
+header six  [<user.text>]$:
+    insert("####### ")
+    insert(user.formatted_text(text or "", "CAPITALIZE_FIRST_WORD"))
+

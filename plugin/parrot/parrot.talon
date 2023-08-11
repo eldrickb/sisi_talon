@@ -11,4 +11,6 @@ parrot(shh):
 	user.mouse_scroll_up(1.75)
 
 parrot(suck):
-	user.mouse_sleep()
+    core.repeat_command(1)
+	
+			

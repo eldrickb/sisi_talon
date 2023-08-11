@@ -20,6 +20,11 @@ press dell: key("delete")
 tear it all down^: key("super-d")
 
 focus web: user.switcher_focus("vivaldi")
+focus music: user.switcher_focus("spotify")
+music: user.switcher_focus("spotify")
+web: user.switcher_focus("vivaldi")
+(chat|discord): user.switcher_focus("discord")
+notes: user.switcher_focus("obsidians")
 
 hop: key("enter")
 oops: key("ctrl-z")
@@ -33,8 +38,8 @@ yummy [<user.text>]:
   insert(text or "")
   
 
-bend: user.line_start();
-lend: user.line_end();
+bend: user.line_start()
+lend: user.line_end()
 
 take line: edit.select_line()
 
@@ -76,8 +81,29 @@ bang:
     sleep(1)
     key("shift:up")
 
+talon parrot:
+		mimic("talon open rebel")
+		sleep(500ms)
+		insert('events.tail("parrot")')
+		key(enter)
+
+
+
 #: key("")
 
 # Talent is so fucking woke telling her sown mother fucking woke bones talon bones talohn ash command mode bones talon I've fucking said bones bones talon ah my god it's not even gonna do that motherfuckdisability::writes::in::this::shiting thing it's literally never going yeah yeah yeah because there is an alphabet like there are letters like if I go a command mode help alphabet1n2
 # nb1027bmy fucking fidget toysoon code um
 
+zoom in: key("ctrl-=")
+zoom out: key("ctrl--")
+zoom reset: key("ctrl-0")
+
+
+wizard show: mimic("command wizard show")
+
+hint tray:
+    bounding_rectangle = user.mouse_helper_calculate_relative_rect("238.0 27.0 782.0 45.0", "")
+    user.mouse_helper_blob_picker(bounding_rectangle)
+
+
+    

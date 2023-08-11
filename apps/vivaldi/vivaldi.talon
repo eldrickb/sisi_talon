@@ -50,12 +50,10 @@ workspace six: key("ctrl-shift-6")
 workspace seven: key("ctrl-shift-7")
 
 
+
+
 #£13iinteresting one called talon#b
-bang: 
-    key("shift:down")
-    mouse_click()
-    sleep(1)
-    key("shift:up")
+
 
 
 fullscreen: key("f11")
@@ -71,7 +69,7 @@ snipe [<user.text>]:
 
 
 # automation
-start casting screen:
+start casting:
     mimic("reveal menu")
     sleep(0.5)
     mimic("touch bat")

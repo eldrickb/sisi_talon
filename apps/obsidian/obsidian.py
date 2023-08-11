@@ -10,10 +10,11 @@ class Actions:
     def obsidian_place_command(cmd: str):
         """This comment is mandatory"""
         actions.key("ctrl-k")
-        actions.sleep("2ms")
+        actions.sleep("20ms")
         actions.insert(cmd)
 
-    def obsidian_open_note(name: str, should_enter: int):
+
+    def obsidian_open_note(name: str, should_enter: bool):
         """This comment is mandatory"""
         actions.key("cmd-p")
         actions.sleep("20ms")
