@@ -1,7 +1,7 @@
 not mode: sleep
 -
 parrot(pop):	
-	mouse_click()
+  mouse_click()
 	user.mouse_drag_end()
 
 parrot(hiss): 

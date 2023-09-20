@@ -13,7 +13,6 @@ class Actions:
         actions.sleep("20ms")
         actions.insert(cmd)
 
-
     def obsidian_open_note(name: str, should_enter: bool):
         """This comment is mandatory"""
         actions.key("cmd-p")
@@ -22,8 +21,6 @@ class Actions:
         actions.sleep("40ms")
         if should_enter:
             actions.key("enter")
-
-
             
     def find(text: str):
         """Triggers find in current editor"""

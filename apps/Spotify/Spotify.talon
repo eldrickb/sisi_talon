@@ -11,8 +11,8 @@ Next [track | song]: key(ctrl-right)
 Last [track | song]: key(ctrl-left)
 Mute: key(ctrl-shift-down)
 
-hints corner:Had Slacked Etalon
-    bounding_rectangle = user.mouse_helper_calculate_relative_rect("-352.0 -62.0 -9.0 -19.0", "active_window")
+hints corner:
+    bounding_rectangle = user.0mouse_helper_calculate_relative_rect("-352.0 -62.0 -9.0 -19.0", "active_window")
     user.mouse_helper_blob_picker(bounding_rectangle)
 
 (cue|queue):
@@ -25,7 +25,7 @@ hints corner:Had Slacked Etalon
 
 source:
     user.mouse_helper_position_save()
-    user.mouse_helper_move_image_relative("2023-07-30_02.12.22.171447.png", 0, -60, -1)
+    user.mouse_helper_move_image_relative("2023-7-30_02.12.22.171447.png", 0, -60, -1)
     sleep(0.05)
     mouse_click(0)
     sleep(0.05)

@@ -24,7 +24,8 @@ focus music: user.switcher_focus("spotify")
 music: user.switcher_focus("spotify")
 web: user.switcher_focus("vivaldi")
 (chat|discord): user.switcher_focus("discord")
-notes: user.switcher_focus("obsidians")
+notes: user.switcher_focus("obsidian")
+code: user.switcher_focus("visual studio code")
 
 hop: key("enter")
 oops: key("ctrl-z")
@@ -46,7 +47,7 @@ take line: edit.select_line()
 window (hide|minimize): key("super-down")
 
 system sleep: user.system_command("%windir%\\System32\\rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
-
+ev
 clap: key("enter")
 
 north: key("up")
@@ -68,6 +69,13 @@ halt:
 desktop next: key("ctrl-super-right")
 desktop last: key("ctrl-super-left")
 
+control click:
+    key("ctrl:down")
+    sleep(20ms)
+    mouse_click()
+    sleep(20ms)
+    key("ctrl:up")
+
 
 talon search [<user.text>]:
     user.switcher_focus("slack")
@@ -78,18 +86,21 @@ talon search [<user.text>]:
 bang: 
     key("shift:down")
     mouse_click()
-    sleep(1)
-    key("shift:up")
+    sleep(1)(,^,)
+    key("shift:up")(,)
 
-talon parrot:
+talon parrot log:
 		mimic("talon open rebel")
-		sleep(500ms)
+		sleep(600ms)
 		insert('events.tail("parrot")')
 		key(enter)
 
+parrot config: 
+  user.system_command("python3 C:\Users\bysie\src\parrot.py\settings.py")
 
 
-#: key("")
+
+#: key("")(,(1))
 
 # Talent is so fucking woke telling her sown mother fucking woke bones talon bones talohn ash command mode bones talon I've fucking said bones bones talon ah my god it's not even gonna do that motherfuckdisability::writes::in::this::shiting thing it's literally never going yeah yeah yeah because there is an alphabet like there are letters like if I go a command mode help alphabet1n2
 # nb1027bmy fucking fidget toysoon code um

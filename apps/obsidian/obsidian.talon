@@ -3,7 +3,30 @@ app: obsidian
 tag(): user.find_and_replace
 
 
+# shortcuts
+
+
+settings: key("ctrl-,")
+browser: key("ctrl-alt-p")
+hotkeys: 
+    key(ctrl-p) 
+    sleep(20ms)
+    insert("core hotkeys")
+    key(enter)
+plugins: 
+    key(ctrl-p) 
+    sleep(20ms)
+    insert("core plugins")
+    key(enter)
+    
+themes: 
+    key(ctrl-p) 
+    sleep(20ms)
+    insert("core appearance")
+    key(enter)
+
 # tabs
+
 tab new: key("ctrl-t")
 tab close: key("ctrl-w")
 tab reopen: key("ctrl-shift-t")
@@ -21,23 +44,32 @@ tab six: key("ctrl-7")
 tab seven: key("ctrl-8")
 
 (files) | (sidebar): key("ctrl-\\")
-(links) | (calendar): key("ctrl-shift-\\")
+(links) | (calendar) | (panelhm): key("ctrl-shift-\\")
+
+new file: key("ctrl-n")
 
 
 # basic commands
-open [<user.text>]: 
-  key("ctrl-o") 
+
+file hunt [<user.text>]:
+  key("ctrl-o")
   insert(text)
 
+file new: key("ctrl-n")
+
 template: key("ctrl-j")
+template [<user.text>]:
+    key("ctrl-j")
+    insert(text)
+    
+quick: key("ctrl-shift-j")
+quick [<user.text>]: 
+    key("ctrl-shift-j")
+    insert(text)
 
-settings: key("ctrl-,")
-store: key("ctrl-alt-p")
-
-
-omni [<user.text>]: 
+omni [<user.text>]:
     key("ctrl-shift-o")
-    insert(text)  
+    insert(text)
     
 brat: key("ctrl-p")
 
@@ -45,38 +77,30 @@ land here: key("ctrl-shift-u")
 daily note: key("ctrl-u")
 switch: key("ctrl-e")
 
-
-template [<user.text>]: 
-  key("ctrl-j") 
+template [<user.text>]:
+  key("ctrl-j")
   sleep(20ms)
   insert(user.text)
 
-
 please [<user.text>]$: user.obsidian_place_command(text)
+
 
 # basic text commands
 
-b10.: key("ctrl-m")
-
-
+bullet: key("ctrl-m")
 bold: key("**")
 slant: key("*")
 strike: key("~~")
-
-
 
 link [<user.text>]: 
     insert("[[")
     insert(text or "")
 
-    
 today:
     insert("@Today")
     sleep(50ms)
     key(enter)
 
-
-bullet: key("ctrl-m")
 
 # headers
     

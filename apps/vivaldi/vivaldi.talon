@@ -41,13 +41,16 @@ hunt [<user.text>]:
     insert(text)
 
 
-workspace one: key("ctrl-shift-1")
-workspace two: key("ctrl-shift-2")
-workspace three: key("ctrl-alt-3")
-workspace four: key("ctrl-alt-4")
-workspace five: key("ctrl-shift-5")
-workspace six: key("ctrl-shift-6")
-workspace seven: key("ctrl-shift-7")
+(workspace|space) one: key("alt-1")
+(workspace|space) two: key("alt-2")
+(workspace|space) three: key("alt-3")
+(workspace|space) four: key("alt-4")
+(workspace|space) five: key("alt-5")
+(workspace|space) six: key("alt-6")
+(workspace|space) seven: key("alt-7")
+(workspace|space) eight: key("alt-8")
+(workspace|space) nine: key("alt-9")
+(workspace|space) 10: key("alt-0")
 
 
 
