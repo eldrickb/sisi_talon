@@ -47,7 +47,7 @@ take line: edit.select_line()
 window (hide|minimize): key("super-down")
 
 system sleep: user.system_command("%windir%\\System32\\rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
-ev
+
 clap: key("enter")
 
 north: key("up")
