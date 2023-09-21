@@ -40,7 +40,6 @@ hunt [<user.text>]:
     sleep(20ms)
     insert(text)
 
-
 (workspace|space) one: key("alt-1")
 (workspace|space) two: key("alt-2")
 (workspace|space) three: key("alt-3")

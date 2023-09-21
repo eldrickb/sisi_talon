@@ -5,7 +5,6 @@ tag(): user.find_and_replace
 
 # shortcuts
 
-
 settings: key("ctrl-,")
 browser: key("ctrl-alt-p")
 hotkeys: 
@@ -24,6 +23,7 @@ themes:
     sleep(20ms)
     insert("core appearance")
     key(enter)
+
 
 # tabs
 
@@ -57,11 +57,15 @@ file hunt [<user.text>]:
 
 file new: key("ctrl-n")
 
+please [<user.text>]$: user.obsidian_place_command(text)
+
+# templater
 template: key("ctrl-j")
 template [<user.text>]:
     key("ctrl-j")
     insert(text)
-    
+  
+# quickadd 
 quick: key("ctrl-shift-j")
 quick [<user.text>]: 
     key("ctrl-shift-j")
@@ -76,14 +80,6 @@ brat: key("ctrl-p")
 land here: key("ctrl-shift-u")
 daily note: key("ctrl-u")
 switch: key("ctrl-e")
-
-template [<user.text>]:
-  key("ctrl-j")
-  sleep(20ms)
-  insert(user.text)
-
-please [<user.text>]$: user.obsidian_place_command(text)
-
 
 # basic text commands
 
