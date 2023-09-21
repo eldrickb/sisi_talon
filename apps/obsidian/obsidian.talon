@@ -57,6 +57,13 @@ file hunt [<user.text>]:
 
 file new: key("ctrl-n")
 
+file move [<user.text>]$: 
+    user.obsidian_place_command("Move file folder")
+    sleep(20ms)
+    key("enter")
+    sleep(20ms)
+    insert(text)
+
 please [<user.text>]$: user.obsidian_place_command(text)
 
 # templater
