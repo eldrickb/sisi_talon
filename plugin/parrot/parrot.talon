@@ -12,5 +12,3 @@ parrot(shh):
 
 parrot(suck):
     core.repeat_command(1)
-	
-			
