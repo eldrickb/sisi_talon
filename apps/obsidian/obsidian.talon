@@ -79,16 +79,12 @@ file banish:
 
 
 please [<user.text>]$: user.obsidian_place_command(text)
-
-
   
 hunt [<user.text>]: 
     key("ctrl-f")
     sleep(20ms)
     insert(text)
 
-
-    
 # templater
 shape: key("ctrl-j")
 shape [<user.text>]:
