@@ -17,7 +17,15 @@ press dell: key("delete")
 
 ^fluent: key("alt-space")
 
-tear it all down^: key("super-d")
+tear it all down: key("super-d")
+
+
+tear it down: 
+  key("super-d")
+  user.switcher_focus("spotify")
+  user.switcher_focus("obsidian")
+  user.switcher_focus("discord")
+
 
 focus web: user.switcher_focus("vivaldi")
 focus music: user.switcher_focus("spotify")
@@ -26,6 +34,8 @@ web: user.switcher_focus("vivaldi")
 (chat|discord): user.switcher_focus("discord")
 notes: user.switcher_focus("obsidian")
 code: user.switcher_focus("visual studio code")
+files: user.switcher_focus("files")
+
 
 hop: key("enter")
 oops: key("ctrl-z")
@@ -85,7 +95,7 @@ talon search [<user.text>]:
     
 bang: 
     key("shift:down")
-    mouse_click()
+    mouse_click()^1^1
     sleep(1)(,^,)
     key("shift:up")(,)
 
@@ -95,7 +105,7 @@ talon parrot log:
 		insert('events.tail("parrot")')
 		key(enter)
 
-parrot config: 
+parrot configure:
   user.system_command("python3 C:\Users\bysie\src\parrot.py\settings.py")
 
 

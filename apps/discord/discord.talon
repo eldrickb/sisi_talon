@@ -34,3 +34,23 @@ mark inbox channel read: user.discord_mark_inbox_read()
 [toggle] (deafen | undeafen): user.discord_deafen()
 answer call: user.discord_answer_call()
 decline call: user.discord_decline_call()
+
+shad:
+    user.discord_quick_switcher("", "shadd")
+    sleep(20ms)
+    key("enter")
+
+scrub:
+    user.discord_quick_switcher("", "living-room gang")
+    sleep(20ms)
+    key("enter")
+
+
+
+
+hunt from me: 
+    key("ctrl-f")
+    sleep(20ms)
+    mimic("yummy")
+    insert("from: sisi")
+    

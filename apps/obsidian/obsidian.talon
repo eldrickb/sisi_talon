@@ -55,6 +55,7 @@ file hunt [<user.text>]:
   key("ctrl-o")
   insert(text)
 
+
 file new: key("ctrl-n")
 
 file move [<user.text>]$: 
@@ -64,11 +65,33 @@ file move [<user.text>]$:
     sleep(20ms)
     insert(text)
 
+    
+file rename: 
+    user.obsidian_place_command("rename file")
+    sleep(20ms)
+    key("enter")
+
+    
+file banish: 
+    user.obsidian_place_command("delete current file")
+    sleep(20ms)
+    key("enter")
+
+
 please [<user.text>]$: user.obsidian_place_command(text)
 
+
+  
+hunt [<user.text>]: 
+    key("ctrl-f")
+    sleep(20ms)
+    insert(text)
+
+
+    
 # templater
-template: key("ctrl-j")
-template [<user.text>]:
+shape: key("ctrl-j")
+shape [<user.text>]:
     key("ctrl-j")
     insert(text)
   
