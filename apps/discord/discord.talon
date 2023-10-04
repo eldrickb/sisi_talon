@@ -36,17 +36,26 @@ answer call: user.discord_answer_call()
 decline call: user.discord_decline_call()
 
 shad:
-    user.discord_quick_switcher("", "shadd")
+    user.discord_quick_switcher("",  "")
     sleep(20ms)
+    insert("luminaryretro")
+    sleep(500ms)
     key("enter")
+
 
 scrub:
-    user.discord_quick_switcher("", "living-room gang")
+    user.discord_quick_switcher("", "")
     sleep(20ms)
+    insert("living-room gang")
+    sleep(500ms)
     key("enter")
 
-
-
+obby:
+    user.discord_quick_switcher("", "")
+    sleep(20ms)
+    insert("obsidian plugin-general")
+    sleep(500ms)
+    key("enter")
 
 hunt from me: 
     key("ctrl-f")

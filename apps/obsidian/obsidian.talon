@@ -1,7 +1,7 @@
 app: obsidian 
 -
 tag(): user.find_and_replace
-
+tag(): user.edit_text_file
 
 # shortcuts
 
@@ -24,6 +24,7 @@ themes:
     insert("core appearance")
     key(enter)
 
+window reload: key(ctrl-shift-r)
 
 # tabs
 
@@ -43,8 +44,8 @@ tab six: key("ctrl-6")
 tab six: key("ctrl-7")
 tab seven: key("ctrl-8")
 
-(files) | (sidebar): key("ctrl-\\")
-(links) | (calendar) | (panelhm): key("ctrl-shift-\\")
+sidebar: key("ctrl-\\")
+panel: key("ctrl-shift-\\")
 
 new file: key("ctrl-n")
 
@@ -65,7 +66,6 @@ file move [<user.text>]$:
     sleep(20ms)
     insert(text)
 
-    
 file rename: 
     user.obsidian_place_command("rename file")
     sleep(20ms)
@@ -107,12 +107,14 @@ land here: key("ctrl-shift-u")
 daily note: key("ctrl-u")
 switch: key("ctrl-e")
 
+annotate: key(ctrl-shift-e)
+
 # basic text commands
 
 bullet: key("ctrl-m")
-bold: key("**")
+bold: insert("**")
 slant: key("*")
-strike: key("~~")
+strike: insert("~~")
 
 link [<user.text>]: 
     insert("[[")

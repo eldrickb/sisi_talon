@@ -125,6 +125,9 @@ class Actions:
     def talon_restart():
         """Quit and relaunch the Talon app"""
 
+    def talon_exit():
+        """"Quit talon"""
+
     def talon_was_restart() -> bool:
         """Returns true if Talon was just restarted"""
         restart_event = storage.get("talon_restart_event", 0)
@@ -155,6 +158,9 @@ class WinUserActions:
         storage.set("talon_restart_event", time.monotonic())
         talon_app = ui.apps(pid=os.getpid())[0]
         os.startfile(talon_app.exe)
+        talon_app.quit()
+    def talon_exit():
+        talon_app = ui.apps(pid=os.getpid())[0]
         talon_app.quit()
 
 

@@ -27,6 +27,15 @@ pretty please [<user.text>]:
 panel: key("ctrl-\\")
 
 
+tab up: key(ctrl-pgup)
+tab down: key(ctrl-f24)
+(tab|tabs) move up: key(ctrl-shift-pgup)
+(tab|tabs) move down: key(ctrl-shift-f24)
+(tab|tabs) stack: key(ctrl-alt-t)
+(tab|tabs) unstack: key(ctrl-alt-shift-t)
+(tab|tabs) top: key(ctrl-home)
+(tab|tabs) bottom: key(ctrl-shift-home)
+
 show bookmarks: key("ctrl-shift-b")
 show downloads: key("ctrl-shift-d")
 show history: key("ctrl-shift-h)
@@ -38,7 +47,7 @@ show settings: key("ctrl-f12")
 hunt [<user.text>]: 
     key("ctrl-f")
     sleep(20ms)
-    insert(text)
+    insert(text or "")
 
 (workspace|space) one: key("alt-1")
 (workspace|space) two: key("alt-2")
@@ -51,12 +60,12 @@ hunt [<user.text>]:
 (workspace|space) nine: key("alt-9")
 (workspace|space) 10: key("alt-0")
 
-
+pick tabs:
+    bounding_rectangle = user.mouse_helper_calculate_relative_rect("39.0 -306.0 47.0 133.0", "active_window")
+    user.mouse_helper_blob_picker(bounding_rectangle)
 
 
 #£13iinteresting one called talon#b
-
-
 
 fullscreen: key("f11")
 
@@ -110,3 +119,7 @@ autoclick source screen:
     mouse_click(0)
     sleep(0.05)
     user.mouse_helper_position_restore()
+
+(pick|choose) tab:
+    bounding_rectangle = user.mouse_helper_calculate_relative_rect("34.0 -118.0 40.0 207.0", "active_window")
+    user.mouse_helper_blob_picker(bounding_rectangle)
