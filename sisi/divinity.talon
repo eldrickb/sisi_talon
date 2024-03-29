@@ -13,7 +13,7 @@ rotate left:
   key("del")
 
 
-  save: key("p")
+save: key("p")
 
   
 north: 

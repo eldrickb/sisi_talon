@@ -46,17 +46,25 @@ choose playlist:
   user.mouse_helper_blob_picker(bounding_rectangle)
 
 snipe [<user.text>]: 
-  key(ctrl-l)
+  key(ctrl-k)
+  sleep(20ms)
   insert(text or "")
-  mimic('spot move Spotify found artists')
-  sleep(1200ms)
-  mouse_click(0)
+  sleep(150ms)
+  key(shift-enter)
+
 
 clutch:
-    
   mimic('spot move Spotify device')
   sleep(10ms)
   mouse_click(0)
   mimic('spot move Spotify computer')
   sleep(10ms)
   mouse_click(0)
+
+save:
+  user.mouse_helper_position_save()
+  user.mouse_helper_move_image_relative("2023-10-05_20.17.50.891405.png", 0)
+  sleep(0.05)
+  mouse_click(0)
+  sleep(0.05)
+  user.mouse_helper_position_restore()
