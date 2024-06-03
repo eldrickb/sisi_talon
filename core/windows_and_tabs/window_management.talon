@@ -1,3 +1,22 @@
+
+# attempt at alt dragh
+
+# window drag:
+#     key(alt:down)
+#     sleep(10ms)
+#     mouse_drag(0)
+
+# # window size:
+# #     key(al|:down)
+# #     sleep(10ms)
+# #     user.mouse_drag(1)
+
+# window drop:
+#     mouse_drag_end()
+#     key('alt:up')
+
+
+
 window (new | open): app.window_open()
 window next: app.window_next()
 window last: app.window_previous()

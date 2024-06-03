@@ -9,7 +9,6 @@ parrot(pop):
 
   # user.mouse_drag(0)
   # sleep(30ms)
-  # user.mouse_drag_end()
 
 parrot(hiss):
   user.mouse_scroll_down(1.75)

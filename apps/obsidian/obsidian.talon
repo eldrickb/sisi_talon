@@ -58,17 +58,17 @@ panel:                      key("ctrl-shift-\\")
 
 new file:                   key("ctrl-n")
 
-start vent:
-    user.obsidian_place_command("start recording audio")
-    sleep(20ms)
-    key(enter)
-    mimic("vent mode")
+# start vent:
+#     user.obsidian_place_command("start recording audio")
+#     sleep(20ms)
+#     key(enter)
+#     mimic("vent mode")
 
-yah:
-    user.obsidian_place_command("stop recording audio")
-    mimic("command mode")
-    sleep(20ms)
-    key(enter)
+# yah:
+#     user.obsidian_place_command("stop recording audio")
+#     mimic("command mode")
+#     sleep(20ms)
+#     key(enter)
 
 # basic commands
 
@@ -97,7 +97,7 @@ file (banish|disard):
 
 please [<user.text>]$:      user.obsidian_place_command(text)
 
-hunt [<user.text>]:
+hunt this [<user.text>]:
     key("ctrl-f")
     sleep(20ms)
     insert(text)
@@ -130,7 +130,8 @@ daily [note]:
     sleep(20ms)
     key("ctrl-shift-h")
 
-switch:                     key("ctrl-e")
+edit|switch:                     key("ctrl-e")
+slide:                     key("alt-e")
 
 annotate:                   key(ctrl-shift-e)
 

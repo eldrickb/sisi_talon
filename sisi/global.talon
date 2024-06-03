@@ -1,5 +1,4 @@
 mode: command
-and not mode: sleep
 -
 
 # audio  management
@@ -106,7 +105,7 @@ march west:                 key("left:down")
     key("right:up")
     key("left:up")
     key("shift:up")
-    key("contrl:up")
+    key("control:up")
     key("alt:up")
 
 hold shift:                 key(shift:down)

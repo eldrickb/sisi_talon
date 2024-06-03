@@ -24,15 +24,15 @@ slot next: key("super-pgdn")
 
 #  window focus
 
-focus web: user.switcher_focus("vivaldi")
-focus music: user.switcher_focus("spotify")
-music: user.switcher_focus("spotify")
-web: user.switcher_focus("vivaldi")
-notes: user.switcher_focus("obsidian")
-code: user.switcher_focus("visual studio code")
+focus web: user.switcher_focus("Vivaldi")
+focus music: user.switcher_focus("Spotify")
+music: user.switcher_focus("Spotify")
+web: user.switcher_focus("Vivaldi")
+notes: user.switcher_focus("Obsidian")
+code: user.switcher_focus("Visual Studio Code")
 (files|finder|explorer): user.switcher_focus("Files")
-shell: user.switcher_focus("tabby")
-(chat|discord): user.switcher_focus("discord")
+shell: user.switcher_focus("WindowsTerminal.exe")
+(chat|discord): user.switcher_focus("Discord")
 
 #  window hiding
 

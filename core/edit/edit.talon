@@ -104,7 +104,7 @@ clear way down:
     edit.delete()
 
 # Copy
-(take|copy) [that]:         edit.copy()
+(take|copy) that:         edit.copy()
 (take|copy) all:            user.copy_all()
 (take|copy) line:           user.copy_line()
 (take|copy) line start:     user.copy_line_start()
@@ -152,7 +152,7 @@ cut word right:             user.cut_word_right()
 #     edit.cut()
 
 # Paste
-(pace | paste) [that]:      edit.paste()
+(pace | paste) that:      edit.paste()
 (pace | paste) enter:
     edit.paste()
     key(enter)
