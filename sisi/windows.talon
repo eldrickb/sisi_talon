@@ -33,6 +33,8 @@ code: user.switcher_focus("Visual Studio Code")
 (files|finder|explorer): user.switcher_focus("Files")
 shell: user.switcher_focus("WindowsTerminal.exe")
 (chat|discord): user.switcher_focus("Discord")
+shell: user.switcher_focus("WindowsTerminal.exe")
+(chat|discord): user.switcher_focus("Discord")
 
 #  window hiding
 
