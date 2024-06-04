@@ -24,10 +24,10 @@ slot next: key("super-pgdn")
 
 #  window focus
 
-focus web: user.switcher_focus("Vivaldi")
-focus music: user.switcher_focus("Spotify")
-music: user.switcher_focus("Spotify")
-web: user.switcher_focus("Vivaldi")
+^focus web: user.switcher_focus("Vivaldi")
+^focus music: user.switcher_focus("Spotify")
+^music: user.switcher_focus("Spotify")
+^web: user.switcher_focus("Vivaldi")
 notes: user.switcher_focus("Obsidian")
 code: user.switcher_focus("Visual Studio Code")
 (files|finder|explorer): user.switcher_focus("Files")
@@ -54,7 +54,6 @@ drain gang:
   mouse_click(0)
   
 ^(swap|pull|pole) (tele | vive | vivy)$: 
-  
   user.mouse_wake()
   mimic("spot move tele")
   sleep(50ms)

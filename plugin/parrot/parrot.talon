@@ -11,10 +11,10 @@ parrot(pop):
   # sleep(30ms)
 
 parrot(hiss):
-  user.mouse_scroll_down(1.75)
+  user.mouse_scroll_down(1.5)
 
 parrot(shh):
-  user.mouse_scroll_up(1.75)
+  user.mouse_scroll_up(1.5)
 
 parrot(suck):
   core.repeat_command(1)

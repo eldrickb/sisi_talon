@@ -46,7 +46,7 @@ shad:
 scrub:
     user.discord_quick_switcher("", "")
     sleep(20ms)
-    insert("living-room gang")
+    insert("coffe joel")
     sleep(500ms)
     key("enter")
 

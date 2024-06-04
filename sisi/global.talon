@@ -4,14 +4,23 @@ mode: command
 # audio  management
 
 audio phones:               key(alt-shift-0)
-audio tv:                   key(alt-shift--)
-audio ock:                  key(alt-shift-7)
-audio mic:                  key(alt-shift-8)
-audio dot:                  key(alt-shift-plus)
+audio pods:                 key(alt-shift-9)
+audio tv:                   key(alt-shift-7)
+audio roland:               key(alt-shift-8)
+
 airpods:                    key(alt-shift-o)
+drainpods:                  key(alt-shift-p)
+
+audio mic:                  key(alt-shift--)
+audio ock:                  key(alt-shift-=)
 
 color picker:               key(alt-f24)
 color picker this:          key(alt-shift-f24)
+
+# display config
+
+display double:             key(alt-shift-u)
+display theater:            key(alt-shift-y)
 
 # system stuff
 
