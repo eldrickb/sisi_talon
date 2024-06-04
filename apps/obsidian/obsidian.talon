@@ -2,7 +2,8 @@ app: obsidian
 -
 tag(): user.find_and_replace
 tag(): user.edit_text_file
-
+tag(): user.tabs
+# todo use tags for these things
 # shortcuts
 
 settings:                   key("ctrl-,")
@@ -41,15 +42,6 @@ tab reopen:                 key("ctrl-shift-t")
 
 flip|tab next:              key("ctrl-tab")
 tab last:                   key("ctrl-shift-tab")
-
-tab one:                    key("ctrl-1")
-tab two:                    key("ctrl-2")
-tab three:                  key("ctrl-3")
-tab four:                   key("ctrl-4")
-tab five:                   key("ctrl-5")
-tab six:                    key("ctrl-6")
-tab six:                    key("ctrl-7")
-tab seven:                  key("ctrl-8")
 
 [tab] stack:                key(alt-e)
 
