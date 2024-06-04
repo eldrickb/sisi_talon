@@ -59,7 +59,8 @@ obby:
 
 hunt from me: 
     key("ctrl-f")
-    sleep(20ms)
+    sleep(50ms)
     mimic("yummy")
+    sleep(50ms)
     insert("from: sisi")
     

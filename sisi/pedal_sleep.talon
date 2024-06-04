@@ -10,7 +10,6 @@ deck(pedal_middle):
     user.talon_mode()
     mode.enable("noise")
 
-    
 deck(pedal_right):
   key(enter)
   

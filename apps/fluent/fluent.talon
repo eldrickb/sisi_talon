@@ -9,6 +9,6 @@ and not mode: sleep
 ^pour [<user.text>]: user.fluent_search(text or "")
 
 peck: key(ctrl-alt-m)
-tray:key(ctrl-;)
 
 ^process hunt [<user.text>]: user.fluent_search("processes\t {text}")
+

@@ -8,7 +8,6 @@ phrase_stack = []
 
 def on_pre_phrase(d):
     phrase_stack.append(d)
-111111
 
 def on_post_phrase(_):
     phrase_stack.pop()
@@ -38,3 +37,5 @@ class Actions:
             cron.after("0ms", lambda: speech_system._on_audio_frame(samples))
         else:
             speech_system._on_audio_frame(samples)
+
+# todo use or delete

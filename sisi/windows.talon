@@ -49,31 +49,31 @@ drain gang:
 
 # vivy
 
-(vive | vivy | web two | tele): 
-  mimic("spot move vivy")
-  mouse_click(0)
+# (vive | vivy | web two | tele): 
+#   mimic("spot move vivy")
+#   mouse_click(0)
   
-^(swap|pull|pole) (tele | vive | vivy)$: 
-  user.mouse_wake()
-  mimic("spot move tele")
-  sleep(50ms)
-  mouse_click(0)
-  sleep(50ms)
-  key("super-shift-right")
+# ^(swap|pull|pole) (tele | vive | vivy)$: 
+#   user.mouse_wake()
+#   mimic("spot move tele")
+#   sleep(50ms)
+#   mouse_click(0)
+#   sleep(50ms)
+#   key("super-shift-right")
 
-center (tele | vive | vivy): 
-  mimic("spot move vivy")
-  sleep(50ms)
-  mouse_click(0)
-  sleep(50ms)
-  key("super-d")
-  sleep(50ms)
-  key("alt-tab")
-  sleep(50ms)
-  key("super-shift-right")
+# center (tele | vive | vivy): 
+#   mimic("spot move vivy")
+#   sleep(50ms)
+#   mouse_click(0)
+#   sleep(50ms)
+#   key("super-d")
+#   sleep(50ms)
+#   key("alt-tab")
+#   sleep(50ms)
+#   key("super-shift-right")
 
 
-(swap|pull|pole) (mini): 
-  mimic("spot move mini")
-  mouse_click(0)
-  key("super-shift-right")
+# (swap|pull|pole) (mini): 
+#   mimic("spot move mini")
+#   mouse_click(0)
+#   key("super-shift-right")

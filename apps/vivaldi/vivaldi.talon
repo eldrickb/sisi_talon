@@ -110,134 +110,134 @@ snipe [<user.text>]:
 
 
 # automation
-start casting:
-    mimic("reveal menu")
-    sleep(0.5)
-    mimic("touch bat")
-    sleep(0.5)
+# start casting:
+#     mimic("reveal menu")
+#     sleep(0.5)
+#     mimic("touch bat")
+#     sleep(0.5)
     
-    mimic("reveal in file menu")
-    sleep(0.5)
-    mimic("touch jury")
-    sleep(0.5)p1010
+#     mimic("reveal in file menu")
+#     sleep(0.5)
+#     mimic("touch jury")
+#     sleep(0.5)
+
+#     mimic("reveal in cast menu")
+#     sleep(0.5)
+#     mimic("touch gust")
+#     sleep(0.5)
     
-    mimic("reveal in cast menu")
-    sleep(0.5)
-    mimic("touch gust")
-    sleep(0.5)
-    
-    mimic("autoclick source screen")
-    sleep(0.5)
+#     mimic("autoclick source screen")
+#     sleep(0.5)
 
-reveal menu:
-    bounding_rectangle = user.mouse_helper_calculate_relative_rect("4.0 2.0 538.0 27.0", "active_window")
-    user.mouse_helper_blob_picker(bounding_rectangle)
+# reveal menu:
+#     bounding_rectangle = user.mouse_helper_calculate_relative_rect("4.0 2.0 538.0 27.0", "active_window")
+#     user.mouse_helper_blob_picker(bounding_rectangle)
 
-reveal in cast ,:
-    bounding_rectangle = user.mouse_helper_calculate_relative_rect("12.0 13.0 148.0 -25.0", "active_window")
-    user.mouse_helper_blob_picker(bounding_rectangle)
+# reveal in cast ,:
+#     bounding_rectangle = user.mouse_helper_calculate_relative_rect("12.0 13.0 148.0 -25.0", "active_window")
+#     user.mouse_helper_blob_picker(bounding_rectangle)
 
 
-reveal in file menu:
-    bounding_rectangle = user.mouse_helper_calculate_relative_rect("45.0 34.0 260.0 439.0", "active_window")
-    user.mouse_helper_blob_picker(bounding_rectangle)
+# reveal in file menu:
+#     bounding_rectangle = user.mouse_helper_calculate_relative_rect("45.0 34.0 260.0 439.0", "active_window")
+#     user.mouse_helper_blob_picker(bounding_rectangle)
 
-autoclick source screen:
-    user.mouse_helper_position_save()
-    user.mouse_helper_move_image_relative("2023-07-29_01.59.38.459873.png", 0, -4, 33)
-    sleep(0.05)
-    mouse_click(0)
-    sleep(0.05)
-    user.mouse_helper_position_restore()
+# autoclick source screen:
+#     user.mouse_helper_position_save()
+#     user.mouse_helper_move_image_relative("2023-07-29_01.59.38.459873.png", 0, -4, 33)
+#     sleep(0.05)
+#     mouse_click(0)
+#     sleep(0.05)
+#     user.mouse_helper_position_restore()
 
-(pick|choose) tab:
-    bounding_rectangle = user.mouse_helper_calculate_relative_rect("34.0 -118.0 40.0 207.0", "active_window")
-    user.mouse_helper_blob_picker(bounding_rectangle)
+# (pick|choose) tab:
+#     bounding_rectangle = user.mouse_helper_calculate_relative_rect("34.0 -118.0 40.0 207.0", "active_window")
+#     user.mouse_helper_blob_picker(bounding_rectangle)
 
-clip:
-    user.mouse_helper_position_save()
-    user.mouse_helper_move_image_relative("2023-11-05_05.50.54.569460.png", 0, 0, 1)
-    sleep(0.05)
-    mouse_click(0)
-    sleep(0.05)
-    user.mouse_helper_position_restore()
+# clip:
+#     user.mouse_helper_position_save()
+#     user.mouse_helper_move_image_relative("2023-11-05_05.50.54.569460.png", 0, 0, 1)
+#     sleep(0.05)
+#     mouse_click(0)
+#     sleep(0.05)
+#     user.mouse_helper_position_restore()
 
 
-clip tube:
-    user.mouse_helper_position_save()
-    user.mouse_helper_move_image_relative("2023-11-05_05.50.54.569460.png", 0, 0, 1)
-    sleep(0.05)
-    mouse_click(0)
-    sleep(0.2)
+# clip tube:
+#     user.mouse_helper_position_save()
+#     user.mouse_helper_move_image_relative("2023-11-05_05.50.54.569460.png", 0, 0, 1)
+#     sleep(0.05)
+#     mouse_click(0)
+#     sleep(0.2)
    
-    # send it 
+#     # send it 
 
-    user.mouse_helper_move_image_relative("2023-11-05_06.12.50.762008.png", 0, 322, 69)
-    sleep(0.05)
-    mouse_click(0)
-    sleep(0.05)
-    user.mouse_helper_position_restore()
+#     user.mouse_helper_move_image_relative("2023-11-05_06.12.50.762008.png", 0, 322, 69)
+#     sleep(0.05)
+#     mouse_click(0)
+#     sleep(0.05)
+#     user.mouse_helper_position_restore()
 
-clip shared:
-    user.mouse_helper_position_save()
-    user.mouse_helper_move_image_relative("2023-11-05_05.50.54.569460.png", 0, 0, 1)
-    sleep(0.05)
-    mouse_click(0)
-    sleep(0.2)
+# clip shared:
+#     user.mouse_helper_position_save()
+#     user.mouse_helper_move_image_relative("2023-11-05_05.50.54.569460.png", 0, 0, 1)
+#     sleep(0.05)
+#     mouse_click(0)
+#     sleep(0.2)
 
-    # expand         
-    user.mouse_helper_move_image_relative("2023-11-05_05.57.58.767211.png", 0, 2, 151)
-    sleep(0.05)
-    mouse_click(0)
-    sleep(0.05)
+#     # expand         
+#     user.mouse_helper_move_image_relative("2023-11-05_05.57.58.767211.png", 0, 2, 151)
+#     sleep(0.05)
+#     mouse_click(0)
+#     sleep(0.05)
 
-    # expand  template 
-    user.mouse_helper_move_image_relative("2023-11-05_06.01.13.305501.png", 0, -2, 65)
-    sleep(0.05)
-    mouse_click(0)
-    sleep(0.05)
+#     # expand  template 
+#     user.mouse_helper_move_image_relative("2023-11-05_06.01.13.305501.png", 0, -2, 65)
+#     sleep(0.05)
+#     mouse_click(0)
+#     sleep(0.05)
 
-    # sel template 
-    user.mouse_helper_move_image_relative("2023-11-05_05.58.25.197211.png", 0, -235, 262)
-    sleep(0.05)
-    mouse_click(0)
-    sleep(0.2)
+#     # sel template 
+#     user.mouse_helper_move_image_relative("2023-11-05_05.58.25.197211.png", 0, -235, 262)
+#     sleep(0.05)
+#     mouse_click(0)
+#     sleep(0.2)
 
-    # send it 
-    user.mouse_helper_move_image_relative("2023-11-05_06.01.49.534324.png", 0)
-    sleep(0.05)
-    mouse_click(0)
-    sleep(0.05)
-    user.mouse_helper_position_restore()
+#     # send it 
+#     user.mouse_helper_move_image_relative("2023-11-05_06.01.49.534324.png", 0)
+#     sleep(0.05)
+#     mouse_click(0)
+#     sleep(0.05)
+#     user.mouse_helper_position_restore()
     
-clip page:
-    user.mouse_helper_position_save()
-    user.mouse_helper_move_image_relative("2023-11-05_05.50.54.569460.png", 0, 0, 1)
-    sleep(0.05)
-    mouse_click(0)
-    sleep(0.2)
+# clip page:
+#     user.mouse_helper_position_save()
+#     user.mouse_helper_move_image_relative("2023-11-05_05.50.54.569460.png", 0, 0, 1)
+#     sleep(0.05)
+#     mouse_click(0)
+#     sleep(0.2)
 
-    # expand         
-    user.mouse_helper_move_image_relative("2023-11-05_05.57.58.767211.png", 0, 2, 151)
-    sleep(0.05)
-    mouse_click(0)
-    sleep(0.05)
+#     # expand         
+#     user.mouse_helper_move_image_relative("2023-11-05_05.57.58.767211.png", 0, 2, 151)
+#     sleep(0.05)
+#     mouse_click(0)
+#     sleep(0.05)
 
-    # expand  template 
-    user.mouse_helper_move_image_relative("2023-11-05_06.01.13.305501.png", 0, -2, 65)
-    sleep(0.05)
-    mouse_click(0)
-    sleep(0.2)
+#     # expand  template 
+#     user.mouse_helper_move_image_relative("2023-11-05_06.01.13.305501.png", 0, -2, 65)
+#     sleep(0.05)
+#     mouse_click(0)
+#     sleep(0.2)
 
-    # sel template 
-    user.mouse_helper_move_image_relative("2023-11-05_06.09.29.177132.png", 0)
-    sleep(0.05)
-    mouse_click(0)
-    sleep(0.05)
+#     # sel template 
+#     user.mouse_helper_move_image_relative("2023-11-05_06.09.29.177132.png", 0)
+#     sleep(0.05)
+#     mouse_click(0)
+#     sleep(0.05)
     
-    # send it 
-    user.mouse_helper_move_image_relative("2023-11-05_05.59.25.180391.png", 0)
-    sleep(0.05)
-    mouse_click(0)
-    sleep(0.05)
-    user.mouse_helper_position_restore()
+#     # send it 
+#     user.mouse_helper_move_image_relative("2023-11-05_05.59.25.180391.png", 0)
+#     sleep(0.05)
+#     mouse_click(0)
+#     sleep(0.05)
+#     user.mouse_helper_position_restore()
